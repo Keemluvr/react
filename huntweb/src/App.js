@@ -1,5 +1,4 @@
 import React from "react";
-import api from "./services/config";
 
 // Components
 import Header from "./components/Header";

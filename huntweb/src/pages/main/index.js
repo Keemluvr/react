@@ -1,17 +1,24 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import api from "../../services/config";
 
-export default class Main extends Component {
-    componentDidMount() {
-        this.loadProducts()
-    }
+const Main = () => {
+  const [docs, setDocs] = useState([]);
 
-    loadProducts = async () => {
-        const response = await api.get(`/products`)
-        console.table(response.data.docs)
-    }
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await api.get(`/products`);
+      setDocs(res.data.docs);
+    };
+    fetchData();
+  }, []);
 
-    render() {
-        return <h1>Teste</h1>
-    }
-}
+  return (
+    <ul>
+      {docs.map((doc) => (
+        <li key={doc._id}>{doc.title}</li>
+      ))}
+    </ul>
+  );
+};
+
+export default Main;

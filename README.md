@@ -16,6 +16,12 @@
 
 # Others
 
-### Lifecycle
+### Before Hooks
 
-![lifecycle](https://i.imgur.com/ba92Qfd.png)
+[Lifecycle](https://devhints.io/react#lifecycle)
+![Lifecle print](https://i.imgur.com/KAuzjW4.png)
+
+### After Hooks
+
+[Hooks](https://devhints.io/react#hooks-new)
+![Hooks print](https://i.imgur.com/BdPVOo1.png)
