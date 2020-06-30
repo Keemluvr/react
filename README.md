@@ -10,5 +10,12 @@
 >``npm test``
 
 ### Reset CSS
-> **index.css**  
-``@import-normalize;``
+> **styles/generic/reset.css**  
+[Link](https://meyerweb.com/eric/tools/css/reset/)
+
+
+# Others
+
+### Lifecycle
+
+![lifecycle](https://i.imgur.com/ba92Qfd.png)
