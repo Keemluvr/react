@@ -12,6 +12,8 @@
         - [CheatSheet](#CheatSheet)
   - [PropTypes](#PropTypes)
   - [Router](#Router)
+    - [Nested Routes](#Nested-Routes)
+    - [Routes Hooks](#Routes-Hooks)
   - [Styled Components](#Styled-Components)
 
 # Commands
@@ -95,6 +97,10 @@ Plugin: [Linter to enforce these rules automatically.](https://www.npmjs.com/pac
 ## PropTypes
 
 ````
+npm install --save prop-types
+````
+
+````
 <name-component>.propTypes = {
     <name-props>: PropTypes.<type>
 };
@@ -105,7 +111,42 @@ Plugin: [Linter to enforce these rules automatically.](https://www.npmjs.com/pac
 
 ## Router
 
+````
+npm install react-router-dom
+````
+
+````
+    <Routes>
+      <Route path="*" element={<PageNotFound/>} />
+      <Route path="/" element={<page1/>} />
+      <Route path="/route" element={<page2/>} />
+    </Routes>
+````
+ - [Nested Routes](https://github.com/ReactTraining/react-router/blob/dev/docs/advanced-guides/migrating-5-to-6.md#advantages-of-route-element)
+    - ````<Outlet />````
+
+ - [Routes Hooks](https://reactrouter.com/web/api/Hooks)
+    - [useParams()](https://github.com/ReactTraining/react-router/blob/dev/docs/advanced-guides/migrating-5-to-6.md#upgrade-to-react-router-v51)
+    - [useNavigate()](https://github.com/ReactTraining/react-router/blob/dev/docs/advanced-guides/migrating-5-to-6.md#use-navigate-instead-of-history)
+    - [useRoutes()](https://github.com/ReactTraining/react-router/blob/dev/docs/advanced-guides/migrating-5-to-6.md#use-useroutes-instead-of-react-router-config)
+        - Define your routes as JavaScript objects instead of using React elements
 ## Styled Components
+
+````
+npm install --save styled-components
+````
+- [Define Styled Components outside of the render method](https://styled-components.com/docs/basics#define-styled-components-outside-of-the-render-method)
+    - It is important to define your styled components outside of the render method, otherwise it will be recreated on every single render pass.
+- [Adapting based on Props](https://styled-components.com/docs/basics#adapting-based-on-props)
+    - ````color: ${props => props.primary ? "white" : "palevioletred"};```` 
+- [Extending styles](https://styled-components.com/docs/basics#extending-styles)
+    - new component that inherits the styling of another.
+        - ````const <new-component> = styled(<other-component>)`<styles-new-component>`; ````
+    - change which tag or component a styled component renders.
+        - ````<Button as="<which-tag>" href="/">Link with Button styles</Button>````
+- [Pseudoelements, pseudoselectors, and nesting](https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting)
+    - **Allowed**: &, :hover, :active and others.  
+        - If you put selectors in without the ampersand, they will refer to children of the component.
 
 ## Redux
 
