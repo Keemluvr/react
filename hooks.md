@@ -1,5 +1,13 @@
 ## Hooks
 
+- [Before Hooks](#Before-hooks)
+    - [After Hooks](#After-hooks)
+        - [Note](#note)
+        - [Basic Hooks](#basic-hooks)
+        - [Custom Hooks](#custom-hooks)
+        - [Other Hooks](#other-hooks)
+        - [CheatSheet](#cheatsheet)
+
 ### Before Hooks
 
 [Lifecycle](https://devhints.io/react#lifecycle)
