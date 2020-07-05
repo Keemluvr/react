@@ -1,0 +1,17 @@
+## Redux
+- Process of creating:
+  - connect
+  - dispatch
+  - action
+  - reducer
+  - store
+  - data flow
+- Duck Pattern 
+  - DANGER
+    - Use when you have a better understanding of Redux
+    - Uncertainty of the continuation of the library
+  - [Redux Sauce](https://github.com/jkeam/reduxsauce)
+    - createReducer - declutter reducers for readability and testing
+    - createTypes - DRY define your types object from a string
+    - createActions - builds your Action Types and Action Creators at the same time
+    - resettableReducer - allows your reducers to be reset
