@@ -1,20 +1,13 @@
 # Index
 
 - [Commands](#Commands)
-- [Others](#Others)
-  - [Hooks](#Hooks)
-    - [Before Hooks](#Before-hooks)
-    - [After Hooks](#After-hooks)
-        - [Note](#note)
-        - [Basic Hooks](#basic-hooks)
-        - [Custom Hooks](#custom-hooks)
-        - [Other Hooks](#other-hooks)
-        - [CheatSheet](#CheatSheet)
-  - [PropTypes](#PropTypes)
-  - [Router](#Router)
-    - [Nested Routes](#Nested-Routes)
-    - [Routes Hooks](#Routes-Hooks)
-  - [Styled Components](#Styled-Components)
+- Others
+  - [Hooks](https://github.com/Keemluvr/react/blob/master/hooks.md)
+  - [PropTypes](https://github.com/Keemluvr/react/blob/master/propTypes.md)
+  - [Router](https://github.com/Keemluvr/react/blob/master/router.md)
+  - [Styled Components](https://github.com/Keemluvr/react/blob/master/styledComponents.md)
+  - [Redux](https://github.com/Keemluvr/react/blob/master/redux.md)
+  - [Tests](https://github.com/Keemluvr/react/blob/master/tests.md)
 
 # Commands
 
